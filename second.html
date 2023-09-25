@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            /* background-image: url("https://i.pinimg.com/originals/0e/b1/56/0eb15636563ecc2920056a5dd6e496c5.gif"); */
+         background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+            background-repeat: no-repeat;
+        
+            /* background-size: 1200px; */
+            background-size:contain;
+            top: 0px;
+            left: 0px;
+        }
+        .logform{
+            width: 200px;
+            height: 200px;
+            margin: 10% 35%;
+            color: white;
+            
+        }
+        .mdiv{
+            border: 5px solid black;
+        }
+        input{
+            width: 95%;
+            margin-top: 10px;
+            color: rgba(240, 240, 240, 0.821);
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            text-align: center;
+            font-weight: bolder;
+        }
+        input:focus{
+            outline:none;
+        }
+        .head{
+            color: white;
+            letter-spacing: 4px;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            display: flex;
+            margin-bottom: 10px;
+            transition-duration: 2s;
+        }
+        input[type="button"]:hover{
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    
+        
+    <div  class="logform">
+
+        <form action="">
+            <div class="mdiv">        
+      <h1 class="head">LOGIN FORM</h1>  
+                <!-- <label for="">Username</label> -->
+                <input type="text" name="" id="usr"><br><br>
+                <!-- <label for=""> Password</label> -->
+                <input type="password" name="" id="pass">
+                <br><br>
+                <!-- <span><a href="#">Forget Passord</a></span> -->
+                <input type="button" value="LOGIN" onclick="validate()">
+                <!-- <span><a href="#">Create Account</a></span> -->
+            </div>
+            <!-- </fieldset> -->
+        </form>
+    
+</div> 
+<script>
+    let usr1="Omkar";
+    let pass1="Omkar@123"
+    function validate(){
+        let usr2=document.getElementById("usr").value;
+        let pass2=document.getElementById("pass").value;
+
+        if(usr1===usr2 && pass1===pass2){
+            open("nespaper.html");
+        }
+        else{
+            alert("please enter correct Credentials")
+        }
+    }
+</script>   
+</body>
+</html>
